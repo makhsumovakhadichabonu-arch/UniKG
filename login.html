@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniKG — Вход</title>
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&family=Source+Serif+4:ital,wght@1,500;1,600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pg-cab">
+  <div id="site-header"></div>
+  <main class="container">
+    <div class="card auth" id="auth" data-mode="up">
+      <h2><span class="ru">Добро пожаловать!</span><span class="ky">Кош келиңиз!</span><span class="en">Welcome!</span></h2>
+      <div class="tabs">
+        <button type="button" class="active" data-mode="up"><span class="ru">Регистрация</span><span class="ky">Каттоо</span><span class="en">Sign up</span></button>
+        <button type="button" data-mode="in"><span class="ru">Вход</span><span class="ky">Кирүү</span><span class="en">Log in</span></button>
+      </div>
+      <form id="authForm">
+        <div class="only-up">
+          <div class="role">
+            <label><input type="radio" name="role" value="student" checked><span class="pill"><span class="ru">Абитуриент</span><span class="ky">Абитуриент</span><span class="en">Student</span></span></label>
+            <label><input type="radio" name="role" value="agent"><span class="pill"><span class="ru">Агент</span><span class="ky">Агент</span><span class="en">Agent</span></span></label>
+          </div>
+          <label for="nm"><span class="ru">Полное имя</span><span class="ky">Толук аты-жөнү</span><span class="en">Full name</span></label>
+          <input id="nm" required>
+        </div>
+        <label for="em"><span class="ru">Email или телефон</span><span class="ky">Email же телефон</span><span class="en">Email or phone</span></label>
+        <input id="em" required>
+        <label for="pw"><span class="ru">Пароль</span><span class="ky">Сырсөз</span><span class="en">Password</span></label>
+        <input id="pw" type="password" minlength="6" required>
+        <div class="only-up">
+          <label class="agree"><input type="checkbox" required>
+            <span><span class="ru">Я согласен(на) с <a href="#">Условиями использования</a> и <a href="#">Политикой конфиденциальности</a></span><span class="ky">Мен <a href="#">Колдонуу шарттарына</a> жана <a href="#">Купуялык саясатына</a> макулмун</span><span class="en">I agree to the <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a></span></span></label>
+        </div>
+        <p></p>
+        <button class="btn full" type="submit"><span class="only-up"><span class="ru">Зарегистрироваться</span><span class="ky">Катталуу</span><span class="en">Sign Up</span></span><span class="only-in"><span class="ru">Войти</span><span class="ky">Кирүү</span><span class="en">Log in</span></span></button>
+      </form>
+      <div class="or"><span class="ru">или продолжить через</span><span class="ky">же улантуу</span><span class="en">or continue with</span></div>
+      <button class="btn btn-line" type="button" id="googleBtn">Google</button>
+      <p class="fnote"><span class="ru">Демо: данные хранятся только в этом браузере, пароль пока не проверяется.</span><span class="ky">Демо: маалымат ушул браузерде гана сакталат, сырсөз азырынча текшерилбейт.</span><span class="en">Demo: data stays in this browser only; the password is not checked yet.</span></p>
+      <div class="msg" id="authMsg"><span class="ru">Демо: данные не сохраняются. Вход заработает после подключения сервера.</span><span class="ky">Демо: маалымат сакталбайт. Сервер кошулганда иштейт.</span><span class="en">Demo: nothing is saved. Login will work once a backend is connected.</span></div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/apply.js"></script>
+</body>
+</html>

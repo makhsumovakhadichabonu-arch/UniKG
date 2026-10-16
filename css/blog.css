@@ -1,0 +1,98 @@
+/* =========================================================
+   UniKG — blog.css  (только блог)
+   Палитра: синий → голубой.  Шрифты: Playfair Display + Golos Text.
+   Подключается ПОСЛЕ style.css. Классы блога начинаются с bl-
+   ========================================================= */
+
+/* ===== 1. Переменные страницы блога ===== */
+.pg-bl {
+  --green: #003098; --green-2: #00268d; --green-3: #7dd3fc;
+  --tint: #e8f1ff; --tint-2: #c7dcff; --accent-ink: #0036c9; --em-ink: #1d4ed8; --em-bg: #dbeafe;
+  --ink: #0a1f44; --muted: #52678c; --line: #d6e4fb;
+  --bl-key: #0b2a6b;                    /* цвет важных слов: тёмно-синий */
+  --bl-mark: rgba(250, 204, 21, .55);   /* жёлтый маркер под важными словами */
+  --g-main: linear-gradient(135deg, #002c8b, #0ea5e9);
+  --g-soft: linear-gradient(135deg, #60a5fa, #22d3ee);
+  --g-deep: linear-gradient(135deg, #0b1e5b, #1d4ed8 55%, #0284c7);
+  --g-pale: linear-gradient(135deg, #eff6ff, #e0f2fe);
+  --head: "Playfair Display", Georgia, serif;
+  --sans: "Golos Text", Inter, system-ui, sans-serif;
+  background: linear-gradient(180deg, #f2f7ff, #e6f3ff 70%, #f0fbff);
+}
+html[data-theme="dark"] .pg-bl {
+  --ink: #e6efff; --muted: #9db3d9; --line: #1b2f5c;
+  --bg: #06122b; --soft: #0a1a3a; --surface: #0c1d3f; --glass: rgba(6,18,43,.8);
+  --tint: #11265a; --tint-2: #1b3a80; --accent-ink: #7dd3fc; --em-ink: #7dd3fc; --em-bg: #0f2a5c;
+  --bl-key: #fde68a; --bl-mark: rgba(56,189,248,.35);
+  --g-pale: linear-gradient(135deg, #0f2a5c, #0a3a5c);
+  background: linear-gradient(180deg, #06122b, #081a3a);
+}
+.pg-bl h1, .pg-bl h2, .pg-bl h3 { font-weight: 800; letter-spacing: -.01em; }
+
+/* ===== 2. Верх страницы блога ===== */
+.bl-hero {
+  position: relative; overflow: hidden; text-align: center; color: #fff; padding: 76px 0 98px;
+  background:
+    radial-gradient(520px 320px at 10% 0, rgba(34,211,238,.5), transparent 70%),
+    radial-gradient(520px 340px at 92% 100%, rgba(37,99,235,.7), transparent 70%),
+    var(--g-deep);
+}
+.bl-hero h1 { margin: 0 0 10px; font-size: clamp(42px, 10vw, 80px); }
+.bl-hero p { max-width: 34em; margin: 0 auto; color: #dbeafe; font-family: var(--head); font-style: italic; font-size: 1.25em; }
+.bl-tools { position: relative; z-index: 2; display: grid; gap: 14px; margin: -50px 0 28px; padding: 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 22px 44px -18px rgba(29,78,216,.45); }
+.bl-tools label { margin: 0 0 6px; font-size: 13px; font-weight: 700; color: var(--accent-ink); text-transform: uppercase; letter-spacing: .05em; }
+
+/* ===== 3. Карточки статей ===== */
+.bl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.bl-card { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); box-shadow: var(--shadow); color: inherit; text-decoration: none; transition: transform .25s, box-shadow .25s; }
+.bl-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -16px rgba(29,78,216,.4); }
+.bl-card.is-first { grid-column: 1 / -1; display: grid; grid-template-columns: 1.1fr 1fr; border-radius: 24px; }
+.bl-card.is-first .bl-cover { min-height: 300px; }
+.bl-card.is-first h3 { font-size: clamp(26px, 3.4vw, 36px); }
+.bl-body { display: flex; flex-direction: column; flex: 1; gap: 8px; padding: 24px; }
+.bl-body h3 { margin: 4px 0 0; font-size: 22px; line-height: 1.15; color: var(--ink); }
+.bl-body p { margin: 0; color: var(--muted); }
+.bl-cat { align-self: flex-start; padding: 4px 12px; border-radius: 999px; background-image: var(--g-main); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.bl-meta { color: var(--muted); font-size: 14px; }
+.bl-more { margin-top: auto; color: var(--accent-ink); font-weight: 800; }
+
+/* Обложка: рамка с градиентом; ваша картинка <img> заполняет всю рамку */
+.bl-cover { position: relative; display: grid; place-items: center; min-height: 170px; margin: 0; overflow: hidden; }
+.bl-cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.c0 { background: linear-gradient(135deg, #2563eb, #0ea5e9); }
+.c1 { background: linear-gradient(135deg, #1d4ed8, #38bdf8); }
+.c2 { background: linear-gradient(135deg, #0369a1, #22d3ee); }
+.c3 { background: linear-gradient(135deg, #1e40af, #60a5fa); }
+.c4 { background: linear-gradient(135deg, #0284c7, #2dd4bf); }
+.c5 { background: linear-gradient(135deg, #3b82f6, #93c5fd); }
+
+/* ===== 4. Страница статьи ===== */
+.bl-article { max-width: 780px; margin: 0 auto; }
+.bl-back { display: inline-block; margin-bottom: 14px; color: var(--accent-ink); font-weight: 700; text-decoration: none; }
+.bl-article h1 { margin: 12px 0 8px; font-size: clamp(30px, 5.2vw, 50px); line-height: 1.1; }
+.bl-article .bl-cover { min-height: 300px; margin: 18px 0 20px; border-radius: 22px; box-shadow: var(--shadow); }
+.bl-article h2 { margin: 34px 0 10px; padding-bottom: 6px; font-size: 28px; border-bottom: 3px solid transparent; border-image: var(--g-main) 1; }
+.bl-article p, .bl-article li { font-size: 18px; line-height: 1.75; }
+.bl-article ul { padding: 0; list-style: none; }
+.bl-article li { position: relative; margin-bottom: 8px; padding-left: 30px; }
+.bl-article li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 800; }
+.bl-key { color: var(--bl-key); font-weight: 800; background: linear-gradient(transparent 62%, var(--bl-mark) 62%); }
+.bl-call { margin: 22px 0; padding: 18px 20px; border-left: 5px solid var(--green); border-radius: 14px; background: var(--g-pale); color: var(--ink); font-weight: 600; }
+.bl-langnote { padding: 10px 14px; border-radius: 10px; background: var(--tint); color: var(--accent-ink); font-style: italic; }
+html[data-lang="ru"] .bl-langnote { display: none; }
+.bl-cta { margin: 36px 0; padding: 34px 24px; border-radius: 24px; text-align: center; color: #fff; background: var(--g-deep); }
+.bl-cta h2 { margin: 0 0 14px; color: #fff; border: 0; padding: 0; }
+.bl-related h2 { margin: 10px 0 16px; font-size: 26px; }
+
+/* ===== 5. Телефон / планшет ===== */
+@media (max-width: 900px) {
+  .bl-grid { grid-template-columns: 1fr 1fr; }
+  .bl-card.is-first { grid-template-columns: 1fr; }
+  .bl-card.is-first .bl-cover { min-height: 220px; }
+}
+@media (max-width: 560px) {
+  .bl-grid { grid-template-columns: 1fr; }
+  .bl-hero { padding: 52px 0 82px; }
+  .bl-article p, .bl-article li { font-size: 17px; }
+  .bl-body { padding: 18px; }
+}

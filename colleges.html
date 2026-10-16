@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniKG — Колледжи</title>
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&family=Unbounded:wght@600;700&family=Manrope:wght@800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pg-colleges">
+  <div id="site-header"></div>
+  <main>
+    <!-- Фон: положите свою картинку в assets/colleges-bg.jpg — поверх неё уже стоит тёмный слой -->
+    <section class="col-hero">
+      <div class="container">
+        <h1><span class="ru">Колледжи</span><span class="ky">Колледждер</span><span class="en">Colleges</span></h1>
+        <p><span class="ru">Выберите колледж по направлению и стоимости — или найдите по названию.</span><span class="ky">Колледжди багыты жана баасы боюнча тандаңыз же атынан издеңиз.</span><span class="en">Pick a college by field and price — or search by name.</span></p>
+      </div>
+    </section>
+    <section class="section col-body">
+      <div class="container">
+        <div class="col-filters" id="colFilters"></div>
+        <p class="found"><span class="ru">Найдено:</span><span class="ky">Табылды:</span><span class="en">Found:</span> <b id="count">0</b></p>
+        <div class="uni-list" id="colList"></div>
+        <p class="empty" id="empty"><span class="ru">Ничего не найдено. Измените поиск или фильтры.</span><span class="ky">Эч нерсе табылган жок. Издөөнү же чыпкаларды өзгөртүңүз.</span><span class="en">Nothing found. Try another search or filter.</span></p>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/colleges.js"></script>
+</body>
+</html>

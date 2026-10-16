@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniKG — Адистиктер жана ЖРТ</title>
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&family=Source+Serif+4:ital,wght@1,500;1,600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pg-programs">
+  <div id="site-header"></div>
+  <main>
+    <section class="page-head"><div class="container">
+      <h1><span class="ky">Адистиктер жана ЖРТ калькулятору</span><span class="ru">Специальности и калькулятор ОРТ</span><span class="en">Programs and ORT calculator</span></h1>
+      <p><span class="ky">Балыңызды жазыңыз — кайсы адистикке өтөрүңүздү көрөсүз. Өтүү баллдары — үлгү.</span><span class="ru">Введите балл — увидите, куда проходите. Проходные баллы — образец.</span><span class="en">Enter your score to see where you qualify. Thresholds are a sample.</span></p>
+    </div></section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <form class="card" id="calc">
+          <label for="score"><span class="ky">ЖРТ балл (60–245)</span><span class="ru">Балл ОРТ (60–245)</span><span class="en">ORT score (60–245)</span></label>
+          <input id="score" type="number" min="60" max="245" value="165" required>
+          <p></p>
+          <button class="btn" type="submit"><span class="ky">Эсептөө</span><span class="ru">Рассчитать</span><span class="en">Calculate</span></button>
+          <div class="result" id="calcResult"></div>
+        </form>
+        <div>
+          <h2><span class="ky">Кандайча иштейт?</span><span class="ru">Как это работает?</span><span class="en">How it works</span></h2>
+          <p class="lead"><span class="ky">Система балыңызды адистиктердин өтүү баллы менен салыштырып, бюджетке же контрактка өтөрүңүздү көрсөтөт.</span><span class="ru">Система сравнивает ваш балл с проходными баллами и показывает, проходите ли вы на бюджет или контракт.</span><span class="en">The calculator compares your score with each program's threshold and shows whether you qualify for state-funded or contract places.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniKG — ЖОЖдорго документ тапшыруу</title>
+  <meta name="description" content="UniKG: Кыргызстандын ЖОЖдоруна онлайн документ тапшыруу. Подача документов в вузы Кыргызстана. Apply to universities in Kyrgyzstan.">
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&family=Source+Serif+4:ital,wght@1,500;1,600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pg-home">
+  <div id="site-header"></div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow"><span class="ru">Онлайн-платформа для абитуриентов Кыргызстана</span><span class="ky">Кыргызстандын абитуриенттери үчүн онлайн платформа</span><span class="en">Online platform for applicants in Kyrgyzstan</span></span>
+          <h1>
+            <span class="ru">Поступайте в вузы Кыргызстана <em class="acc">легко и надёжно</em></span>
+            <span class="ky">Кыргызстандын ЖОЖдоруна <em class="acc">оңой жана ишенимдүү</em> тапшырыңыз</span>
+            <span class="en">Apply to Kyrgyzstan's universities <em class="acc">easily and reliably</em></span>
+          </h1>
+          <p>
+            <span class="ru">Укажите баллы ОРТ, выберите специальность и подайте документы онлайн через одну платформу.</span>
+            <span class="ky">ЖРТ балдарыңызды киргизиңиз, адистикти тандаңыз жана документтериңизди бир платформадан онлайн тапшырыңыз.</span>
+            <span class="en">Enter your ORT score, choose a program and send your documents online from one platform.</span>
+          </p>
+          <div class="hero-cta">
+            <a class="btn" href="apply.html"><span class="ru">Подать документы</span><span class="ky">Документ тапшыруу</span><span class="en">Apply now</span></a>
+            <a class="btn btn-ghost" href="universities.html"><span class="ru">Каталог вузов</span><span class="ky">ЖОЖдор каталогу</span><span class="en">University catalog</span></a>
+          </div>
+        </div>
+        <div class="glass" aria-hidden="true">
+          <div class="g-top"><span class="chip">КНУ</span><div><b><span class="ru">Информатика</span><span class="ky">Информатика</span><span class="en">Computer science</span></b><small><span class="ru">Бишкек · Государственный</span><span class="ky">Бишкек · Мамлекеттик</span><span class="en">Bishkek · State</span></small></div></div>
+          <ol class="tl">
+            <li><span class="ru">Подано</span><span class="ky">Тапшырылды</span><span class="en">Submitted</span><small>15 <span class="ru">июня</span><span class="ky">июнь</span><span class="en">Jun</span></small></li>
+            <li><span class="ru">Документы проверены</span><span class="ky">Документтер текшерилди</span><span class="en">Documents checked</span><small>22 <span class="ru">июня</span><span class="ky">июнь</span><span class="en">Jun</span></small></li>
+            <li class="wait"><span class="ru">Собеседование</span><span class="ky">Маектешүү</span><span class="en">Interview</span></li>
+          </ol>
+          <div class="sample"><span class="ru">Пример заявки</span><span class="ky">Арыздын үлгүсү</span><span class="en">Sample application</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Лента логотипов вузов (заполняется из js/main.js) -->
+    <section class="marquee-sec">
+      <p class="center">
+        <span class="ru">Университеты Кыргызстана на платформе</span><span class="ky">Платформадагы Кыргызстандын университеттери</span><span class="en">Kyrgyzstan's universities on the platform</span>
+      </p>
+      <div class="marquee"><div class="track" id="track"></div></div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2><span class="ru">Всё для поступления <em class="acc">в одном месте</em></span><span class="ky">Тапшыруу үчүн баары бир жерде</span><span class="en">Everything for admission in one place</span></h2>
+        <div class="bento">
+          <a class="tile t-navy t-wide t-tall" href="universities.html">
+            <div><div class="big" id="bentoCount">26</div></div>
+            <div><h3><span class="ru">вузов в каталоге</span><span class="ky">ЖОЖ каталогто</span><span class="en">universities in the catalog</span></h3>
+            <p><span class="ru">Фильтры по городу, типу, языку и направлению.</span><span class="ky">Шаар, түрү, тили жана багыты боюнча чыпкалоо.</span><span class="en">Filter by city, type, language and field.</span></p></div>
+            <span class="arrow">→</span>
+          </a>
+          <a class="tile t-blue" href="programs.html">
+            <div><h3><span class="ru">Калькулятор ОРТ</span><span class="ky">ЖРТ калькулятору</span><span class="en">ORT calculator</span></h3>
+            <p><span class="ru">Узнайте, куда проходите.</span><span class="ky">Кайда өтөрүңүздү билиңиз.</span><span class="en">See where you qualify.</span></p></div>
+            <span class="arrow">→</span>
+          </a>
+          <a class="tile t-em" href="grants.html">
+            <div><h3><span class="ru">Гранты</span><span class="ky">Гранттар</span><span class="en">Grants</span></h3>
+            <p><span class="ru">Стипендии и бюджетные места.</span><span class="ky">Стипендиялар жана бюджеттик орундар.</span><span class="en">Scholarships and state places.</span></p></div>
+            <span class="arrow">→</span>
+          </a>
+          <a class="tile t-wide" href="apply.html">
+            <div><h3><span class="ru">Один профиль — все вузы</span><span class="ky">Бир профиль — бардык ЖОЖ</span><span class="en">One profile — every university</span></h3>
+            <p><span class="ru">Загрузите документы один раз и подавайте заявки онлайн.</span><span class="ky">Документтерди бир жолу жүктөп, онлайн арыз бериңиз.</span><span class="en">Upload documents once and apply online.</span></p></div>
+            <span class="arrow">→</span>
+          </a>
+          <div class="tile t-wide t-lang">
+            <b>RU · KG · EN</b>
+            <p><span class="ru">Сайт на русском, кыргызском и английском языках.</span><span class="ky">Сайт орус, кыргыз жана англис тилдеринде.</span><span class="en">Available in Russian, Kyrgyz and English.</span></p>
+          </div>
+          <button class="tile t-wide" type="button" data-a11y>
+            <div><h3>👁 <span class="ru">Для слабовидящих</span><span class="ky">Начар көргөндөр үчүн</span><span class="en">For low vision</span></h3>
+            <p><span class="ru">Крупный шрифт и высокий контраст — нажмите, чтобы настроить.</span><span class="ky">Чоң арип жана жогорку контраст — жөндөө үчүн басыңыз.</span><span class="en">Large text and high contrast — click to adjust.</span></p></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2><span class="ru">Три шага — <em class="acc">один вечер</em></span><span class="ky">Үч кадам — бир кеч</span><span class="en">Three steps — one evening</span></h2>
+        <p class="lead"><span class="ru">Оформите профиль один раз, а платформа подставит ваши данные в каждую заявку.</span><span class="ky">Профилди бир жолу толтуруңуз, платформа маалыматты ар бир арызга өзү кошот.</span><span class="en">Create your profile once and the platform fills it into every application.</span></p>
+        <div class="grid-3" id="flow"></div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2><span class="ru">Перед началом: что понадобится</span><span class="ky">Баштоодон мурун: эмне керек</span><span class="en">Before you start: what you need</span></h2>
+        <p class="lead"><span class="ru">Короткий список. Файлы загружаются один раз и используются для всех заявок.</span><span class="ky">Кыска тизме. Файлдар бир жолу жүктөлүп, бардык арыздарга колдонулат.</span><span class="en">A short list. Upload files once and reuse them for every application.</span></p>
+        <div class="chips" id="who"></div>
+        <div class="docs" id="docs"></div>
+        <p class="fnote" id="docNote"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2><span class="ru">Частые вопросы</span><span class="ky">Көп берилген суроолор</span><span class="en">Frequently asked questions</span></h2>
+        <div id="faq"></div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container">
+        <h2><span class="ru">Готовы начать?</span><span class="ky">Баштоого даярсызбы?</span><span class="en">Ready to start?</span></h2>
+        <a class="btn btn-ghost" href="apply.html"><span class="ru">Подать заявку</span><span class="ky">Арыз берүү</span><span class="en">Start application</span></a>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
