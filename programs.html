@@ -11,23 +11,49 @@
 <body class="pg-programs">
   <div id="site-header"></div>
   <main>
-    <section class="page-head"><div class="container">
-      <h1><span class="ky">Адистиктер жана ЖРТ калькулятору</span><span class="ru">Специальности и калькулятор ОРТ</span><span class="en">Programs and ORT calculator</span></h1>
-      <p><span class="ky">Балыңызды жазыңыз — кайсы адистикке өтөрүңүздү көрөсүз. Өтүү баллдары — үлгү.</span><span class="ru">Введите балл — увидите, куда проходите. Проходные баллы — образец.</span><span class="en">Enter your score to see where you qualify. Thresholds are a sample.</span></p>
-    </div></section>
+    <section class="page-head">
+      <div class="container">
+      <h1>
+        <span class="ky">Адистиктер жана ЖРТ калькулятору</span>
+        <span class="ru">Специальности и калькулятор ОРТ</span>
+        <span class="en">Programs and ORT calculator</span>
+      </h1>
+      <p>
+        <span class="ky">Балыңызды жазыңыз — кайсы адистикке өтөрүңүздү көрөсүз. Өтүү баллдары — үлгү.</span>
+        <span class="ru">Введите балл — увидите, куда проходите. Проходные баллы — образец.</span>
+        <span class="en">Enter your score to see where you qualify. Thresholds are a sample.</span>
+      </p>
+    </div>
+  </section>
 
     <section class="section">
       <div class="container grid-2">
         <form class="card" id="calc">
-          <label for="score"><span class="ky">ЖРТ балл (60–245)</span><span class="ru">Балл ОРТ (60–245)</span><span class="en">ORT score (60–245)</span></label>
+          <label for="score">
+            <span class="ky">ЖРТ балл (60–245)</span>
+            <span class="ru">Балл ОРТ (60–245)</span>
+            <span class="en">ORT score (60–245)</span>
+          </label>
           <input id="score" type="number" min="60" max="245" value="165" required>
           <p></p>
-          <button class="btn" type="submit"><span class="ky">Эсептөө</span><span class="ru">Рассчитать</span><span class="en">Calculate</span></button>
+          <button class="btn" type="submit">
+            <span class="ky">Эсептөө</span>
+            <span class="ru">Рассчитать</span>
+            <span class="en">Calculate</span>
+          </button>
           <div class="result" id="calcResult"></div>
         </form>
         <div>
-          <h2><span class="ky">Кандайча иштейт?</span><span class="ru">Как это работает?</span><span class="en">How it works</span></h2>
-          <p class="lead"><span class="ky">Система балыңызды адистиктердин өтүү баллы менен салыштырып, бюджетке же контрактка өтөрүңүздү көрсөтөт.</span><span class="ru">Система сравнивает ваш балл с проходными баллами и показывает, проходите ли вы на бюджет или контракт.</span><span class="en">The calculator compares your score with each program's threshold and shows whether you qualify for state-funded or contract places.</span></p>
+          <h2>
+            <span class="ky">Кандайча иштейт?</span>
+            <span class="ru">Как это работает?</span>
+            <span class="en">How it works</span>
+          </h2>
+          <p class="lead">
+            <span class="ky">Система балыңызды адистиктердин өтүү баллы менен салыштырып, бюджетке же контрактка өтөрүңүздү көрсөтөт.</span>
+            <span class="ru">Система сравнивает ваш балл с проходными баллами и показывает, проходите ли вы на бюджет или контракт.</span>
+            <span class="en">The calculator compares your score with each program's threshold and shows whether you qualify for state-funded or contract places.</span>
+          </p>
         </div>
       </div>
     </section>

@@ -12,33 +12,72 @@
   <div id="site-header"></div>
   <main>
     <section class="page-head"><div class="container">
-      <h1><span class="ru">Каталог вузов</span><span class="ky">ЖОЖдор каталогу</span><span class="en">University catalog</span></h1>
-      <p><span class="ky">Шаар же аталыш боюнча издеңиз. Маалымат — үлгү.</span><span class="ru">Ищите по городу или названию. Данные — образец.</span><span class="en">Search by city or name. Data is a sample.</span></p>
-    </div></section>
+      <h1>
+        <span class="ru">Каталог вузов</span>
+        <span class="ky">ЖОЖдор каталогу</span>
+        <span class="en">University catalog</span>
+      </h1>
+      <p>
+        <span class="ky">Шаар же аталыш боюнча издеңиз. Маалымат — үлгү.</span>
+        <span class="ru">Ищите по городу или названию. Данные — образец.</span>
+        <span class="en">Search by city or name. Data is a sample.</span>
+      </p>
+    </div>
+  </section>
 
     <section class="section">
       <div class="container catalog">
         <aside class="sidebar" id="filters"></aside>
         <div>
-          <p class="found"><span class="ru">Найдено:</span><span class="ky">Табылды:</span><span class="en">Found:</span> <b id="count">0</b></p>
+          <p class="found">
+            <span class="ru">Найдено:</span>
+            <span class="ky">Табылды:</span>
+            <span class="en">Found:</span> <b id="count">0</b>
+          </p>
           <div class="uni-list" id="uniList"></div>
-          <p class="empty" id="empty"><span class="ru">Ничего не найдено. Измените фильтры.</span><span class="ky">Эч нерсе табылган жок. Чыпкаларды өзгөртүңүз.</span><span class="en">Nothing found. Try different filters.</span></p>
-          <p class="fnote"><span class="ru">Данные ориентировочные — проверяйте на сайтах вузов. Источник списка адресов:</span><span class="ky">Маалымат болжолдуу — ЖОЖдордун сайттарынан текшериңиз. Дарек тизмесинин булагы:</span><span class="en">Data is indicative — verify on each university's site. Address list source:</span> <a href="https://bilim.akipress.org/profiles:1/universitie/list//?f=cp" target="_blank" rel="noopener">bilim.akipress.org</a></p>
+          <p class="empty" id="empty">
+            <span class="ru">Ничего не найдено. Измените фильтры.</span>
+            <span class="ky">Эч нерсе табылган жок. Чыпкаларды өзгөртүңүз.</span>
+            <span class="en">Nothing found. Try different filters.</span>
+          </p>
+          <p class="fnote">
+            <span class="ru">Данные ориентировочные — проверяйте на сайтах вузов. Источник списка адресов:</span>
+            <span class="ky">Маалымат болжолдуу — ЖОЖдордун сайттарынан текшериңиз. Дарек тизмесинин булагы:</span>
+            <span class="en">Data is indicative — verify on each university's site. Address list source:</span> <a href="https://bilim.akipress.org/profiles:1/universitie/list//?f=cp" target="_blank" rel="noopener">bilim.akipress.org</a></p>
         </div>
       </div>
     </section>
 
     <section class="section alt">
       <div class="container">
-        <h2><span class="ru">Сравнение вузов</span><span class="ky">ЖОЖдорду салыштыруу</span><span class="en">Compare universities</span></h2>
+        <h2><span class="ru">Сравнение вузов</span>
+          <span class="ky">ЖОЖдорду салыштыруу</span>
+          <span class="en">Compare universities</span>
+        </h2>
         <div class="table-wrap">
           <table>
             <thead><tr>
-              <th><span class="ru">Вуз</span><span class="ky">ЖОЖ</span><span class="en">University</span></th>
-              <th><span class="ru">Город</span><span class="ky">Шаар</span><span class="en">City</span></th>
-              <th><span class="ru">Тип</span><span class="ky">Түрү</span><span class="en">Type</span></th>
-              <th><span class="ru">Языки</span><span class="ky">Тилдер</span><span class="en">Languages</span></th>
-              <th><span class="ru">Стоимость (сом/год)</span><span class="ky">Баасы (сом/жыл)</span><span class="en">Cost (KGS/year)</span></th>
+              <th><span class="ru">Вуз</span>
+                <span class="ky">ЖОЖ</span>
+                <span class="en">University</span></th>
+              <th>
+                <span class="ru">Город</span>
+                <span class="ky">Шаар</span>
+                <span class="en">City</span>
+              </th>
+              <th><span class="ru">Тип</span>
+                <span class="ky">Түрү</span>
+                <span class="en">Type</span>
+              </th>
+              <th>
+                <span class="ru">Языки</span>
+                <span class="ky">Тилдер</span>
+                <span class="en">Languages</span>
+              </th>
+              <th><span class="ru">Стоимость (сом/год)</span>
+                <span class="ky">Баасы (сом/жыл)</span>
+                <span class="en">Cost (KGS/year)</span>
+              </th>
             </tr></thead>
             <tbody id="cmpBody"></tbody>
           </table>
